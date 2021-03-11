@@ -1,10 +1,65 @@
-# Getting Started with Create React App
+# Employee_Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+An employee directory that allows a manager to view non-sensitive data about other employees using React. It would be particularly helpful to be able to filter employees by name.
+
+:round_pushpin: [Click here to navigate to deployed React App!](https://nsc9605.github.io/Employee_Tracker/) :round_pushpin:
+
+## Table of Contents
+
+- [Demonstration](#demonstration)
+- [Installation](#installation)
+- [License](#license)
+- [Contribution](#contribution)
+- [Technologies](#technologies)
+- [Contact Information](#contact-information)
+
+## Demonstration
+
+### Header View
+![Header Display Local Time](./src/img/header1.png)
+
+### Color Change Time-Blocks
+![Change In Color Depending On Time](./src/img/color-change.png)
+
+
+### Directory Structure
+
+```
+├── node_modules
+│
+├── public
+│   └── favicon.ico
+│   └── index.html
+│   └── manifest.json
+│
+├── src
+│   └── components
+│       └── .js
+│   └── img
+│       └── .png
+│       └── .png
+│   └── styles
+│       └── App.css
+│       └── index.css
+│       └── .css
+│   └── utils
+│       └── API.js
+│
+│   └── App.js
+│   └── hour.json
+│   └── index.js
+│
+├── package-lock.json
+├── package.json  
+│
+├── README.md
+```
+
+## Installation
 
 ### `npm start`
 
@@ -39,32 +94,34 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### Code Splitting
+This application is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contribution
 
-### Analyzing the Bundle Size
+This project was creating with help from:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Previous class materials and activities provided by Bootcamp Spot
+- My tutor [Eric Wallen](https://github.com/ericwallen)
+- Help from other students in the class in a private study group.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Technologies
 
-### Advanced Configuration
+- [ReactJS](https://reactjs.org/)
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Random User API](https://randomuser.me/)
+- [gh-pages](https://www.npmjs.com/package/gh-pages)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- Terminal / Git Bash
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contact Information
 
-### Deployment
+- GitHub: [nsc9605](https://github.com/nsc9605)
+- Portfolio: [Deploy Portfolio](https://nsc9605.github.io/Responsive-Portfolio/)
+- Email: [Nicole Catapano](mailto:nsc9605@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
