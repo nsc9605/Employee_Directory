@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import API from '../utils/API';
+import "../styles/EmployeeData.css"
 
 
 class EmployeeData extends Component {
@@ -20,26 +21,32 @@ class EmployeeData extends Component {
 
     render() {
         return (
-            <>
+            // <>
             <div className="container">
-                <table className="employeeTable table-striped table-hover table-condensed">
-                    <thead className="hed">
+                <table className="table-striped table-hover table-condensed">
+                    <thead>
                         <tr>
                             <th>Photo</th>
                             <th>First Name</th>
                             <th>Last Name</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
                             <th>Phone</th>
                             <th>Email</th>
                         </tr>
                     </thead>
                     {this.state.displayEmployee && this.state.displayEmployee.map(employee => (
-                        <tbody key={employee}>
+                        <tbody>
                             <tr key={employee.id.value}>
                                 <td>
-                                    <img src={employee.picture.medium} alt="medium"/>
+                                    <img src={employee.picture.large} alt="medium" />
                                 </td>
                                 <td>{employee.name.first}</td>
                                 <td>{employee.name.last}</td>
+                                <td>{employee.location.city}</td>
+                                <td>{employee.location.state}</td>
+                                <td>{employee.location.country}</td>
                                 <td>{employee.phone}</td>
                                 <td>{employee.email}</td>
                             </tr>
@@ -47,7 +54,7 @@ class EmployeeData extends Component {
                     ))}
                 </table>
             </div>
-            </>
+            // </>
         )
     }
 }
