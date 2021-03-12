@@ -38,7 +38,8 @@ An employee directory that allows a manager to view non-sensitive data about oth
 │
 ├── src
 │   └── components
-│       └── .js
+│       └── EmployeeFilter.js
+│       └── EmployeeTable.js
 │   └── img
 │       └── .png
 │       └── .png

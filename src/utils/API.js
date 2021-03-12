@@ -1,9 +1,8 @@
 // import axios from "axios";
-const BASEURL = "'https://randomuser.me/api/'";
-// const APIKEY = "&apikey=trilogy";
+// const BASEURL = "'https://randomuser.me/api/'";
 
 // export default {
-//   search: function(query) {
-//     return axios.get(BASEURL + query + "?results=50&format=json&exc=login" );
+//   getEmployee: function() {
+//     return axios.get(BASEURL + "?results=50&format=json" );
 //   }
 // };
