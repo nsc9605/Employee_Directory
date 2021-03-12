@@ -1,7 +1,10 @@
 import axios from "axios";
+const BASEURL = "https://randomuser.me/api/?results=50";
 
+
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  getEmployee: function() {
-    return axios.get("https://randomuser.me/api/?results=50&format=json" );
+  employee: function() {
+    return axios.get(BASEURL);
   }
 };

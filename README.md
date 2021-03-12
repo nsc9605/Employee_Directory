@@ -38,8 +38,11 @@ An employee directory that allows a manager to view non-sensitive data about oth
 │
 ├── src
 │   └── components
+│       └── EmployeeData.js
 │       └── EmployeeFilter.js
-│       └── EmployeeTable.js
+│       └── Header.js
+│       └── Main.js
+│       └── Wrapper.js
 │   └── img
 │       └── .png
 │       └── .png
@@ -51,7 +54,6 @@ An employee directory that allows a manager to view non-sensitive data about oth
 │       └── API.js
 │
 │   └── App.js
-│   └── hour.json
 │   └── index.js
 │
 ├── package-lock.json
