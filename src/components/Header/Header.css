@@ -1,18 +1,30 @@
-/* .App {
-  text-align: center;
-} */
+* {
+  font-family: 'Encode Sans', sans-serif;
+  
+}
 
 .header {
   text-align: center;
-  /* background: url("https://www.rccd.edu/admin/ed_services/it/PublishingImages/INFO_TECH_HERO.jpg") center center cover;
-  background-repeat: no-repeat; */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: black;
+  /* background: url("https://www.rccd.edu/admin/ed_services/it/PublishingImages/INFO_TECH_HERO.jpg") cover; */
+  background: rgba(31, 99, 52, 0.653);
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  color: #ffffff;
   /* border-radius: 0; */
   border-bottom: 10px solid black;
   min-height: 30vh;
   width: 100%;
   justify-content: center;
+ 
+}
+
+h1 {
+  padding-top: 10px;
+  /* font-family: 'Carrois Gothic SC', sans-serif; */
+  font-family: bold;
+  text-shadow: 4px 4px 4px rgb(10, 10, 10),
+  -1px 1px 2px rgb(255, 255, 255),
+   1px -1px 1px #000,
+ -1px -1px 1px rgb(0, 0, 0);
 }
 
 h2 {

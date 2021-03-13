@@ -6,7 +6,7 @@
 
 An employee directory that allows a manager to view non-sensitive data about other employees using React. It would be particularly helpful to be able to filter employees by name.
 
-:round_pushpin: [Click here to navigate to deployed React App!](https://nsc9605.github.io/Employee_Tracker/) :round_pushpin:
+:round_pushpin: [Click here to navigate to deployed React App!](https://nsc9605.github.io/Employee_Directory/) :round_pushpin:
 
 ## Table of Contents
 

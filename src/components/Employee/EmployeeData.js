@@ -35,7 +35,7 @@ class EmployeeData extends Component {
 
   render() {
     return (
-      <div>
+      <div className="spacing">
           <SearchForm changeHandler={this.handleInputChange} value={this.state.search}/>
             <div className="datatable mt-3">
                 <table className="empTable table-striped table-hover table-condensed">
@@ -62,8 +62,16 @@ class EmployeeData extends Component {
                                 <td>{employee.location.city}</td>
                                 <td>{employee.location.state}</td>
                                 <td>{employee.location.country}</td>
-                                <td>{employee.phone}</td>
-                                <td>{employee.email}</td>
+                                <td>
+                                  <a href={"tel: " + employee.phone}>
+                                  {employee.phone}
+                                  </a>
+                                </td>
+                                <td>
+                                  <a href={"mailto: " + employee.email} target="_blank" rel="noreferrer">
+                                    {employee.email}
+                                    </a>
+                                </td>
                             </tr>
                         </tbody>
                     ))}
