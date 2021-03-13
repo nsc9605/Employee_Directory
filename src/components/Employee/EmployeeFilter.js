@@ -3,10 +3,10 @@
 
 // function EmployeeFilter(props) {
 //         const { employees } = props;
-//         // const [sortedCategory, setSortedCategory] = React.useState(null);
+//         const [sortList, setSortList] = React.useState(null);
 //         let sortedEmployees = [...employees];
-//         if (sortedCategory !== null) {
-//             sortedEmployees.sort((a, b) => {
+//         if (sortList !== null) {
+//             sortedEmployees.sort((a.name.first, b) => {
 //               if (a.name < b.name) {
 //                 return -1;
 //               }
