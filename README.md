@@ -38,22 +38,25 @@ An employee directory that allows a manager to view non-sensitive data about oth
 │
 ├── src
 │   └── components
-│       └── EmployeeData.js
-│       └── EmployeeFilter.js
-│       └── Header.js
-│       └── Main.js
-│       └── Wrapper.js
+│       └── Employee
+│           └── Employee.css
+│           └── EmployeeData.js
+│           └── EmployeeFilter.js
+│       └── Header
+│           └── Header.css
+│           └── Header.js
+│       └── Search
+│           └── SearchForm.css
+│           └── SearchForm.js
 │   └── img
 │       └── .png
 │       └── .png
-│   └── styles
-│       └── App.css
-│       └── index.css
-│       └── .css
+│
 │   └── utils
 │       └── API.js
 │
 │   └── App.js
+│   └── index.css
 │   └── index.js
 │
 ├── package-lock.json
@@ -109,7 +112,6 @@ This application is licensed under the MIT License.
 This project was creating with help from:
 
 - Previous class materials and activities provided by Bootcamp Spot
-- My tutor [Eric Wallen](https://github.com/ericwallen)
 - Help from other students in the class in a private study group.
 
 
