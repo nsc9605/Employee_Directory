@@ -34,14 +34,14 @@ thead {
   padding-bottom: 20px;
   background-color: #acacac7a;
   color: rgb(4, 1, 1);
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   padding-bottom: 18px;
   text-transform: uppercase;
 }
 
 td {
-  align-items: center;
+  text-align: center;
 }
 
 tr {

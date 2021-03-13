@@ -1,5 +1,10 @@
 {
     "cSpell.words": [
         "Datatable"
+    ],
+    "cSpell.ignoreWords": [
+        "category",
+        "set",
+        "sorted"
     ]
 }

@@ -1,27 +1,42 @@
-import React, { Component } from 'react';
-import API from '../utils/API';
-import "../styles/EmployeeData.css";
-
+import React, { Component } from "react";
+import API from "../../utils/API";
+import SearchForm from "../Search/SearchForm";
+import "./Employee.css";
 
 class EmployeeData extends Component {
-    state = {
-        employee: [],
-        displayEmployee: []
-    }
-    
-    componentDidMount() {
-        API.employee()
-        .then((response) => {
-            this.setState({
-                employee: response.data.results,
-                displayEmployee: response.data.results
-            });
-        });
-    }
+  state = {
+    search: "",
+    employee: [],
+    displayEmployee: [],
+  };
 
-    render() {
-        return (
-            // <>
+//  Handle how employee is filtered when searched
+  handleInputChange = e => {
+    const searchInput = e.target.value.toLowerCase();
+
+    const newEmployeeList = this.state.employee.filter(employee => {
+        const employeeResult = employee.name.first + employee.name.last;
+        return employeeResult.toLowerCase().includes(searchInput)
+    })
+    this.setState({
+        displayEmployee: newEmployeeList,
+        search: searchInput
+    });
+  }
+
+  componentDidMount() {
+    API.employee().then((response) => {
+      this.setState({
+        employee: response.data.results,
+        displayEmployee: response.data.results,
+      });
+    });
+  }
+
+  render() {
+    return (
+      <div>
+          <SearchForm changeHandler={this.handleInputChange} value={this.state.search}/>
             <div className="datatable mt-3">
                 <table className="empTable table-striped table-hover table-condensed">
                     <thead>
@@ -54,9 +69,9 @@ class EmployeeData extends Component {
                     ))}
                 </table>
             </div>
-            // </>
-        )
-    }
+      </div>
+    );
+  }
 }
 
 export default EmployeeData;

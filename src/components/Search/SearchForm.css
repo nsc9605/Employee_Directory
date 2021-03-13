@@ -1,0 +1,25 @@
+form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.searchBtn {
+    border-radius: 7px;
+    width: 50%;
+    background: rgb(205, 205, 255);
+    box-shadow: 4px 4px 4px black;
+}
+
+.searchBtn:hover {
+    background-color: rgb(110, 83, 191);
+    transition: all .3s ease-in-out;
+}
+
+input {
+    border: 1px solid;
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px black;
+                /* -1px 1px 1px black; */
+}
