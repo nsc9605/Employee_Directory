@@ -7,9 +7,9 @@ class Main extends Component {
     render() {
         return(
             <>
+            <EmployeeData />
             {/* <EmployeeFilter /> */}
             {/* <EmployeeTable /> */}
-            <EmployeeData />
             </>
         )
     }

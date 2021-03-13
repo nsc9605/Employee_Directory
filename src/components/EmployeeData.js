@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import API from '../utils/API';
-import "../styles/EmployeeData.css"
+import "../styles/EmployeeData.css";
 
 
 class EmployeeData extends Component {
@@ -22,10 +22,10 @@ class EmployeeData extends Component {
     render() {
         return (
             // <>
-            <div className="container">
-                <table className="table-striped table-hover table-condensed">
+            <div className="datatable mt-3">
+                <table className="empTable table-striped table-hover table-condensed">
                     <thead>
-                        <tr>
+                        <tr className="m-2">
                             <th>Photo</th>
                             <th>First Name</th>
                             <th>Last Name</th>

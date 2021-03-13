@@ -1,21 +1,25 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .header {
   text-align: center;
-  background-color: rgb(191, 223, 197);
+  /* background: url("https://www.rccd.edu/admin/ed_services/it/PublishingImages/INFO_TECH_HERO.jpg") center center cover;
+  background-repeat: no-repeat; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: black;
-  border-radius: 0;
+  /* border-radius: 0; */
   border-bottom: 10px solid black;
   min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
   justify-content: center;
+}
+
+h2 {
+  font-size: 1em;
 }
 
 .App-link {
   color: #61dafb;
 }
+
