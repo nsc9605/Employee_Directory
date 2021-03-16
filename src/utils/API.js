@@ -1,10 +1,16 @@
 import axios from "axios";
-const BASEURL = "https://randomuser.me/api/?results=100";
 
+  
+const API = new Promise( (resolve, reject) =>{
+  fetch('https://randomuser.me/api/?results=50') 
+  .then((response) => response.json())
+  .then((response) => {
+    resolve (response.results) 
+    
+  })
+    .catch((err) => reject(err))
+ 
+ });
+ 
+ export default API;
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
-  employee: function() {
-    return axios.get(BASEURL);
-  }
-};

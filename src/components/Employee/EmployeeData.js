@@ -6,7 +6,7 @@ import "./Employee.css";
 class EmployeeData extends Component {
   state = {
     search: "",
-    sortEmployeesInOrderOf: "asc",
+    sortEmployeesOrder: "asc",
     employee: [],
     displayEmployee: [],
   };
@@ -39,22 +39,23 @@ class EmployeeData extends Component {
       return 0;
     });
 
-    if (this.state.sortEmployeesInOrderOf === "desc") {
+    if (this.state.sortEmployeesOrder === "desc") {
       sortedEmployees.reverse();
-      this.setState({ sortEmployeesInOrderOf: "asc" });
+      this.setState({ sortEmployeesOrder: "asc" });
     } else {
-      this.setState({ sortEmployeesInOrderOf: "desc" });
+      this.setState({ sortEmployeesOrder: "desc" });
     }
     this.setState({ displayEmployee: sortedEmployees });
   };
 
-  componentDidMount() {
-    API.employee().then((response) => {
-      this.setState({
-        employee: response.data.results,
-        displayEmployee: response.data.results,
-      });
+// Display Employees from API when page loads
+  async componentDidMount() {
+    const getEmployee = await API;
+    this.setState({
+      employee: getEmployee,
+      displayEmployee: getEmployee,
     });
+ 
   }
 
   render() {
@@ -71,12 +72,14 @@ class EmployeeData extends Component {
                 <th>Photo</th>
                 <th>
                   Name
-                  <span className="sort" onClick={this.sortByName}>
-                    <i className="arrow"></i>
+                  <span
+                    className=""
+                    onClick={this.sortByName}
+                  ><i class="bi bi-arrow-down-up"></i>
                   </span>
                 </th>
-                <th>Phone</th>
                 <th>Email</th>
+                <th>Phone</th>
                 <th>Location</th>
                 <th>Country</th>
                 <th>Age</th>
@@ -122,49 +125,3 @@ class EmployeeData extends Component {
 }
 
 export default EmployeeData;
-
-// Sort Employees by First Name
-// sortByFirstName = () => {
-//   const employeeArray = new Array(...this.state.employee);
-
-//   const sortedEmployees = employeeArray.sort((a, b) => {
-//     if (a.name.first < b.name.first) {
-//       return -1;
-//     }
-//     if (a.name.first > b.name.first) {
-//       return 1;
-//     }
-//     return 0;
-//   });
-
-//   if (this.state.sortEmployeesInOrderOf === "desc") {
-//     sortedEmployees.reverse();
-//     this.setState({ sortEmployeesInOrderOf: "asc" });
-//   } else {
-//     this.setState({ sortEmployeesInOrderOf: "desc" });
-//   }
-//   this.setState({ displayEmployee: sortedEmployees });
-// };
-
-// // Sort Employees by Last Name
-// sortByLastName = () => {
-//   const employeeArray = new Array(...this.state.employee);
-
-//   const sortedEmployees = employeeArray.sort((a, b) => {
-//     if (a.name.last < b.name.last) {
-//       return -1;
-//     }
-//     if (a.name.last > b.name.last) {
-//       return 1;
-//     }
-//     return 0;
-//   });
-
-//   if (this.state.sortEmployeesInOrderOf === "desc") {
-//     sortedEmployees.reverse();
-//     this.setState({ sortEmployeesInOrderOf: "asc" });
-//   } else {
-//     this.setState({ sortEmployeesInOrderOf: "desc" });
-//   }
-//   this.setState({ displayEmployee: sortedEmployees });
-// };
