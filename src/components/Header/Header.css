@@ -6,13 +6,13 @@
   
 } */
 
-.header {
+.jumbotron {
   text-align: center;
   background: rgba(31, 99, 52, 0.653);
   color: #ffffff;
   border-bottom: 10px solid black;
   min-height: 30vh;
-  width: 100%;
+  min-width: 100%;
   justify-content: center;
  
 }

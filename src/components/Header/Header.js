@@ -3,7 +3,7 @@ import "./Header.css";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="jumbotron jumbotron-fluid">
       <h1 className="display-3">Employee Directory</h1>
       <h2 >
         Bringing employers an organized way to to filter and search their

@@ -66,7 +66,7 @@ class EmployeeData extends Component {
           value={this.state.search}
         />
         <div className="datatable mt-3">
-          <table className="empTable table-striped table-hover table-condensed">
+          <table className="empTable table table-striped table-hover table-condensed table-responsive">
             <thead>
               <tr className="m-2">
                 <th>Photo</th>

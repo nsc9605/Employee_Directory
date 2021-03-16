@@ -6,15 +6,13 @@
    padding: 10px;
 }
 
-table {
-  padding: 10px;
-}
 
 .empTable {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.3em;
   border-collapse: collapse;
   width: 100%;
+  align-items: center;
   
 }
 

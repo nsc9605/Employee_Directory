@@ -112,6 +112,7 @@ This project was creating with help from:
 
 - Previous class materials and activities provided by Bootcamp Spot
 - Help from other students in the class in a private study group.
+- [Sortable Tables Using React](https://www.smashingmagazine.com/2020/03/sortable-tables-react/)
 
 
 ## Technologies
