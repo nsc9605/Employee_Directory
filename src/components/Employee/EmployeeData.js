@@ -73,9 +73,8 @@ class EmployeeData extends Component {
                 <th>
                   Name
                   <span
-                    className=""
                     onClick={this.sortByName}
-                  ><i class="bi bi-arrow-down-up"></i>
+                  ><i className="bi bi-arrow-down-up"></i>
                   </span>
                 </th>
                 <th>Email</th>

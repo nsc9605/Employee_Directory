@@ -1,5 +1,3 @@
-import axios from "axios";
-
   
 const API = new Promise( (resolve, reject) =>{
   fetch('https://randomuser.me/api/?results=50') 
