@@ -65,8 +65,8 @@ class EmployeeData extends Component {
           changeHandler={this.handleInputChange}
           value={this.state.search}
         />
-        <div className="datatable mt-3">
-          <table className="empTable table table-striped table-hover table-condensed table-responsive">
+        <div className="datatable mt-3 table-responsive">
+          <table className="empTable table table-striped table-hover table-condensed">
             <thead>
               <tr className="m-2">
                 <th>Photo</th>
