@@ -4,7 +4,7 @@
 
 ## Description
 
-An employee directory that allows a manager to view non-sensitive data about other employees using React. It would be particularly helpful to be able to filter employees by name.
+An employee directory that allows an employer to view non-sensitive data about other employees using React. This application allows the user to search for employee by first or last name. Once the user begins to type in a name, the application eliminates those without the letters input until that specific employee is the only one left. The user is also able to sort employee by name by simply clicking on the up and down arrows next to the "Name" header.
 
 :round_pushpin: [Click here to navigate to deployed React App!](https://nsc9605.github.io/Employee_Directory/) :round_pushpin:
 
@@ -19,11 +19,11 @@ An employee directory that allows a manager to view non-sensitive data about oth
 
 ## Demonstration
 
-### Header View
-![Header Display Local Time](./src/img/header1.png)
+### Main View
+![Main View](./src/img/main.png)
 
-### Color Change Time-Blocks
-![Change In Color Depending On Time](./src/img/color-change.png)
+### Sort and Search Gif
+![Sort and Search Gif](./src/img/Employee-Directory.gif)
 
 
 ### Directory Structure
@@ -41,7 +41,6 @@ An employee directory that allows a manager to view non-sensitive data about oth
 │       └── Employee
 │           └── Employee.css
 │           └── EmployeeData.js
-│           └── EmployeeFilter.js
 │       └── Header
 │           └── Header.css
 │           └── Header.js
@@ -49,13 +48,13 @@ An employee directory that allows a manager to view non-sensitive data about oth
 │           └── SearchForm.css
 │           └── SearchForm.js
 │   └── img
-│       └── .png
-│       └── .png
+│       └── Employee-Directory.gif
+│       └── main.png
 │
 │   └── utils
 │       └── API.js
 │
-│   └── App.js
+│   └── App.jsx
 │   └── index.css
 │   └── index.js
 │

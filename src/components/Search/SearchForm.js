@@ -15,10 +15,11 @@ function SearchForm(props) {
                 aria-label="Search"
                 onChange={props.changeHandler}
                 />
-                <button 
+                {/* <button 
                 className="searchBtn"
                 // key={}
-                type="search">Search</button>
+                onClick={props.changeHandler}
+                type="search">Search</button> */}
 
 
             </form>

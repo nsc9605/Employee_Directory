@@ -6,7 +6,7 @@ import "./Employee.css";
 class EmployeeData extends Component {
   state = {
     search: "",
-    sortEmployeesOrder: "asc",
+    sortEmployeesOrder: "ASC",
     employee: [],
     displayEmployee: [],
   };
@@ -39,11 +39,11 @@ class EmployeeData extends Component {
       return 0;
     });
 
-    if (this.state.sortEmployeesOrder === "desc") {
+    if (this.state.sortEmployeesOrder === "DESC") {
       sortedEmployees.reverse();
-      this.setState({ sortEmployeesOrder: "asc" });
+      this.setState({ sortEmployeesOrder: "ASC" });
     } else {
-      this.setState({ sortEmployeesOrder: "desc" });
+      this.setState({ sortEmployeesOrder: "DESC" });
     }
     this.setState({ displayEmployee: sortedEmployees });
   };
