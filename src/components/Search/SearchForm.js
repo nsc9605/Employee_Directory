@@ -7,7 +7,6 @@ function SearchForm(props) {
             <form>
                 <input 
                 value={props.value}
-                // id={search}
                 name="search"
                 type="text"
                 className="search-input"
@@ -15,13 +14,6 @@ function SearchForm(props) {
                 aria-label="Search"
                 onChange={props.changeHandler}
                 />
-                {/* <button 
-                className="searchBtn"
-                // key={}
-                onClick={props.changeHandler}
-                type="search">Search</button> */}
-
-
             </form>
         </div>
     )

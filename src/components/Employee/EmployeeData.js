@@ -39,6 +39,7 @@ class EmployeeData extends Component {
       return 0;
     });
 
+    // Set what order when the arrows are clicked
     if (this.state.sortEmployeesOrder === "DESC") {
       sortedEmployees.reverse();
       this.setState({ sortEmployeesOrder: "ASC" });
