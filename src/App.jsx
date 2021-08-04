@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import EmployeeData from './components/Employee/EmployeeData';
+import EmployeeData from './components/EmployeeData';
+import "./index.css";
 
 function App() {
 

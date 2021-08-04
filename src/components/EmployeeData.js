@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import API from "../../utils/API";
-import SearchForm from "../Search/SearchForm";
-import "./Employee.css";
+import API from "../utils/API";
+import SearchForm from "./SearchForm";
 
 class EmployeeData extends Component {
   state = {

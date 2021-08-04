@@ -1,0 +1,36 @@
+.jumbotron {
+    text-align: center;
+    background: rgba(31, 99, 52, 0.653);
+    color: #ffffff;
+    border-bottom: 10px solid black;
+    min-height: 30vh;
+    min-width: 100%;
+    justify-content: center;
+   
+  }
+  
+  h1 {
+    padding-top: 10px;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 4px 4px 4px rgb(10, 10, 10),
+    1px 1px 2px rgb(11, 8, 8),
+     1px -1px 1px #000,
+   1px -1px 1px rgb(0, 0, 0);
+  }
+  
+  h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(10, 10, 10),
+    -1px -1px 1px rgb(0, 0, 0);
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px rgb(10, 10, 10);
+  }
+  
+  h2, 
+  h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
