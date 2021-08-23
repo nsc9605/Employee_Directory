@@ -3,7 +3,7 @@ node_modules/
 
 # Extensions
 .history
-.vscode
+.vscode/ 
 
-# Build
+# Production
 /build
